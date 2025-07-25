@@ -8,5 +8,16 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.4",
     "zod": "^4.0.8"
-  }
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'No build step needed for backend'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
