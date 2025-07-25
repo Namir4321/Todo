@@ -1,19 +1,19 @@
 {
-  "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.16.4",
-    "zod": "^4.0.8"
-  },
+ "dependencies": {
+  "bcryptjs": "^3.0.2",
+  "cookie-parser": "^1.4.7",
+  "cors": "^2.8.5",
+  "express": "^5.1.0",
+  "jsonwebtoken": "^9.0.2",
+  "mongoose": "^8.16.4",
+  "zod": "^4.0.8",
+  "dotenv": "^17.2.0"
+},
+"devDependencies": {},
+
   "name": "backend",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {
-    "dotenv": "^17.2.0"
-     },
   "scripts": {
     "start": "node app.js",
     "build": "echo 'No build step needed for backend'"
