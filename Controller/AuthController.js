@@ -51,9 +51,13 @@ exports.SigninUser = async (req, res, next) => {
     );
     if (isPasswordValid) {
       const token = await user.getJWT();
-      res.cookie("token", token, {
-        expires: new Date(Date.now() + 24 * 60 * 60 * 1000), // 1 day
-      });
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000), // 1 day
+    });
+
       const userData = user.toObject();
       delete userData.password;
       res.json({ user: userData, message: "Login Successful" });
