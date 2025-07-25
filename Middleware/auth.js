@@ -3,7 +3,7 @@ const User = require("../Model/User");
 const cookieParser = require("cookie-parser");
 
 const userAuth = async (req, res, next) => {
-
+console.log(req.cookies);
   try {
     const cookies = req.cookies;
     const { token } = cookies;
