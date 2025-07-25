@@ -3,10 +3,10 @@ const {
   validationWithZodSchema,
   userSignInSchema,
 } = require("../utils/validator");
-const User = require("../model/User");
+const User = require("../Model/User");
 const { hashedPassword } = require("../utils/Helper");
 exports.SignupUser = async (req, res, next) => {
-  console.log(req.body)
+  console.log(req.body);
   try {
     const ValidatedFields = await validationWithZodSchema(
       req.body,
