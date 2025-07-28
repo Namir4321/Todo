@@ -63,6 +63,7 @@ exports.updateTask = async (req, res, next) => {
     const updatedTask = await Task.findByIdAndUpdate(id, validatedData, {
       new: true,
     });
+    console.log(updatedTask)
     res.status(200).json(updatedTask);
   } catch (err) {
     console.error("Task update error:", err);
